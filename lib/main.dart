@@ -14,44 +14,24 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea( 
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Container(
-                height: double.infinity,
-                width: 100.0,
-                //margin: EdgeInsets.fromLTRB(10, 10.0, 10.0, 0.0),
-                padding: EdgeInsets.all(10.0),
-                color: Colors.red,
-                child: Text('Container 1'),
+              CircleAvatar(
+                //child: Image("images/Perfil.png"),
+                backgroundImage: AssetImage("images/Perfil.png"),
+                radius: 50.0,
+                backgroundColor: Colors.white,
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Container(
-                    height: 100.0,
-                    width: 100.0,
-                    padding: EdgeInsets.all(10.0),
-                    color: Colors.yellow,
-                    child: Text('Container 3'),
+              Text(
+                'Matheus Dias Sousa',
+                style: TextStyle(
+                  fontSize: 21.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
                   ),
-                  Container(
-                    height: 100.0,
-                    width: 100.0,
-                    padding: EdgeInsets.all(10.0),
-                    color: Color.fromRGBO(255, 255, 51, 0.5),
-                    child: Text('Container 4'),
-                  ),                  
-                ],
               ),
-              Container(
-                height: double.infinity,
-                width: 100.0,
-                //margin: EdgeInsets.fromLTRB(10, 10.0, 10.0, 0.0),
-                padding: EdgeInsets.all(10.0),
-                color: Colors.blue,
-                child: Text('Container 2'),
-              ),              
                  
             ],
           ),
