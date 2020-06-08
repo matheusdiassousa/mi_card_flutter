@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'Microelectronics Design',
+                  'Microelectronics Designer',
                   style: TextStyle(
                     fontFamily: 'SourceSansPro',
                     fontSize: 25.0,
@@ -81,7 +81,7 @@ class MyApp extends StatelessWidget {
                         color: Colors.teal[900],
                       ),
                       SizedBox(width: 5,),
-                      Text('+55 9 6053 9908',
+                      Text('+55 11 9 6053 9908',
                         style: TextStyle(
                           fontFamily: 'SourceSansPro',
                           color: Colors.teal.shade900,
