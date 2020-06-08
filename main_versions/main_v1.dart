@@ -45,14 +45,10 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  width: 240.0,
-                  height: 1.0,
-                  color: Colors.teal[100],
-                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 0),
-                ),
-                Card(
                   color: Colors.white,
+                  padding: EdgeInsets.fromLTRB(10.0, 5.0, 10.0, 0),
                   margin: EdgeInsets.symmetric(vertical: 3, horizontal: 25),
+                  alignment: Alignment.center,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
@@ -72,9 +68,11 @@ class MyApp extends StatelessWidget {
                     ],
                   ),
                 ),
-                Card(
+                Container(
                   color: Colors.white,
+                  padding: EdgeInsets.fromLTRB(10.0, 5.0, 10.0, 0),
                   margin: EdgeInsets.symmetric(vertical: 3, horizontal: 25),
+                  alignment: Alignment.center,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
