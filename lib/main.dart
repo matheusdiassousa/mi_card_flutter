@@ -45,53 +45,49 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  width: 240.0,
-                  height: 1.0,
-                  color: Colors.teal[100],
-                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 0),
+                  padding: EdgeInsets.symmetric(vertical: 2, horizontal: 0),
+                  height: 10.0,
+                  width: 150.0,
+                  child: Divider(
+                    color: Colors.red,
+                  ),
                 ),
                 Card(
                   color: Colors.white,
-                  margin: EdgeInsets.symmetric(vertical: 3, horizontal: 25),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Icon(Icons.email,
-                        size: 25,
-                        color: Colors.teal[900],
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  child: ListTile(
+                    leading: Icon(Icons.email,
+                      size: 25,
+                      color: Colors.teal[900],
+                    ),
+                    title: Text('matheus_diassousa@hotmail.com',
+
+                      style: TextStyle(
+                        fontFamily: 'SourceSansPro',
+                        color: Colors.teal.shade900,
+                        fontSize: 15.0,
+                        fontWeight: FontWeight.bold,
                       ),
-                      SizedBox(width: 5,),
-                      Text(' matheus_diassousa@hotmail.com',
-                        style: TextStyle(
-                          fontFamily: 'SourceSansPro',
-                          color: Colors.teal.shade900,
-                          fontSize: 15.0,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
                 ),
                 Card(
                   color: Colors.white,
                   margin: EdgeInsets.symmetric(vertical: 3, horizontal: 25),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Icon(Icons.phone,
-                        size: 25,
-                        color: Colors.teal[900],
+                  child: ListTile(
+                    leading: Icon(Icons.phone,
+                      size: 25,
+                      color: Colors.teal[900],
+                    ),
+                    title: Text('+55 11 9 6053 9908',
+
+                      style: TextStyle(
+                        fontFamily: 'SourceSansPro',
+                        color: Colors.teal.shade900,
+                        fontSize: 16.0,
+                        fontWeight: FontWeight.bold,
                       ),
-                      SizedBox(width: 5,),
-                      Text('+55 11 9 6053 9908',
-                        style: TextStyle(
-                          fontFamily: 'SourceSansPro',
-                          color: Colors.teal.shade900,
-                          fontSize: 16.0,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
                 ),
               ],
